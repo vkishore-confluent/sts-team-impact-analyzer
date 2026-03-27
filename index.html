@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Scale STS Team (AMER) | Impact Wins</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Team Impact Wins</h1>
+            <p class="subtitle">Celebrating our team's achievements and customer success</p>
+        </header>
+
+        <!-- Stats Dashboard -->
+        <div class="stats-grid" id="statsGrid">
+            <div class="stat-card">
+                <div class="stat-value" id="totalWins">-</div>
+                <div class="stat-label">Total Wins</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgImpact">-</div>
+                <div class="stat-label">Avg Impact Score</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="topCategory">-</div>
+                <div class="stat-label">Top Category</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="thisMonth">-</div>
+                <div class="stat-label">This Month</div>
+            </div>
+        </div>
+
+        <!-- Filters and Controls -->
+        <div class="controls">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="searchFilter">Search:</label>
+                    <input type="text" id="searchFilter" placeholder="Search subject, customer, or description...">
+                </div>
+
+                <div class="filter-group">
+                    <label for="categoryFilter">Category:</label>
+                    <select id="categoryFilter">
+                        <option value="">All Categories</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="teamFilter">Team Member:</label>
+                    <select id="teamFilter">
+                        <option value="">All Team Members</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="dateFilter">Date Range:</label>
+                    <select id="dateFilter">
+                        <option value="all">All Time</option>
+                        <option value="7">Last 7 days</option>
+                        <option value="30">Last 30 days</option>
+                        <option value="90">Last 90 days</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="sort-controls">
+                <label for="sortBy">Sort by:</label>
+                <select id="sortBy">
+                    <option value="date-desc">Date (Newest)</option>
+                    <option value="date-asc">Date (Oldest)</option>
+                    <option value="impact-desc">Impact Score (High to Low)</option>
+                    <option value="impact-asc">Impact Score (Low to High)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div class="loading" id="loadingState">
+            <div class="spinner"></div>
+            <p>Loading impact wins...</p>
+        </div>
+
+        <!-- Error State -->
+        <div class="error-message" id="errorState" style="display: none;">
+            <p>Failed to load data. Please check your configuration.</p>
+        </div>
+
+        <!-- Wins Grid -->
+        <div class="wins-grid" id="winsGrid">
+            <!-- Cards will be inserted here -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="emptyState" style="display: none;">
+            <p>No impact wins found matching your filters.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
