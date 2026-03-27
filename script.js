@@ -17,7 +17,7 @@ const CONFIG = {
 
     // Option 2: Using published CSV (simpler, but less real-time)
     // Get this URL from: File > Share > Publish to web > CSV
-    // CSV_URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS5sZft2FHfga3jGebFyIRwoqxPu2VvpO9LVUOmBIzBmT5Z30jeJo9TD0XKsgGUBrpuiDJgdNLG5IS1/pub?output=csv'
+    CSV_URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS5sZft2FHfga3jGebFyIRwoqxPu2VvpO9LVUOmBIzBmT5Z30jeJo9TD0XKsgGUBrpuiDJgdNLG5IS1/pub?output=csv'
 };
 
 // ==================== STATE ====================
